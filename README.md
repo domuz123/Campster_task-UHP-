@@ -37,7 +37,4 @@ gulp watch
 ```
 
 
-## Author
-
-* **Bojan Raguž** - *Initial work* - [Email](bojanraguz1992@gmail.com)
 
