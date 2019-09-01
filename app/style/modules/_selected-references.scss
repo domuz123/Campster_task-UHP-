@@ -1,0 +1,62 @@
+.selected-references {
+    height: 450px;
+
+    .selected-references-small {
+        margin: auto;
+        width: 80%;
+
+
+        h2 {
+            color: $darkBlue;
+            font-weight: bold;
+        }
+
+        .carousel-indicators {
+            bottom: -80px;
+
+            li {
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                background-color: $blue;
+
+            }
+        }
+
+        .carousel-item {
+            img {
+                height: 250px;
+            }
+        }
+
+        .carousel-control-prev {
+            img {
+                position: relative;
+                margin-left: -200px;
+                color: gray
+            }
+        }
+
+        .carousel-control-next {
+            img {
+                position: relative;
+                margin-right: -200px;
+                color: gray;
+            }
+
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 586px) {
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+.lets-work-together {
+    border-bottom: 3px solid $blue;
+    height: 160px;
+
+
+
+    .btn {
+
+        background-color: $blue;
+        border: none;
+        width: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 427px) {
+    .lets-work-together {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .lets-work-together p {
+        font-size: 13px;
+    }
+
+    .lets-work-together h3 {
+        font-size: 25px;
+    }
+
+    .lets-work-together .btn {
+        width: 100px;
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .lets-work-together p {
+        font-size: 11px;
+    }
+
+    .lets-work-together h3 {
+        font-size: 20px;
+    }
+
+    .lets-work-together .btn {
+        width: 100px;
+        padding: 5px 5px;
+    }
+}

@@ -1,0 +1,175 @@
+header {
+
+    .logo {
+
+        .logo-cut {
+            border-right: 90px solid $white;
+            border-top: 91px solid #002542;
+        }
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        background-color: #002542;
+
+
+        .navbar-brand {
+            position: absolute;
+            top: 15px;
+            right: 200px;
+
+
+            img {
+                height: 64px;
+            }
+        }
+    }
+
+    .navbar {
+
+        .navbar-nav {
+
+            .nav-link {
+                color: $darkBlue;
+                font-weight: bold;
+                position: relative;
+                padding-bottom: 35px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    opacity: 0;
+                    top: 30px;
+                    left: 0;
+                    transition: all 250ms;
+                }
+
+                &:hover {
+                    color: $blue;
+
+                    &:after {
+                        opacity: 1;
+                        left: 0;
+                        top: 63px;
+                        transition: all .2s;
+                        width: 100%;
+                        height: 4px;
+                        background-color: $blue;
+                    }
+                }
+            }
+
+            .active {
+                color: $blue !important;
+                position: relative;
+                padding-bottom: 35px;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    left: 0;
+                    height: 4px;
+                    background-color: $blue;
+                    top: 63px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .navbar-brand {
+            img {
+                max-height: 40px;
+            }
+        }
+
+        .collapse {
+            .en-flag {
+                max-height: 30px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    header {
+        .navbar {
+            .navbar-brand {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+
+        background-color: $darkBlue;
+        padding: 10px 0;
+
+        .logo {
+            display: none;
+        }
+
+        .navbar {
+
+            .collapse,
+            .navbar-collapse {
+                padding: 30px;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 20px;
+                        padding-bottom: 0 !important;
+                        color: $white;
+
+                        &:hover {
+
+                            color: $blue;
+
+                            &:after {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    .active {
+                        &:after {
+                            content: none;
+                        }
+                    }
+                }
+
+                .localization {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                padding-bottom: 40px !important;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    header {
+        .container {
+            width: auto;
+        }
+    }
+}

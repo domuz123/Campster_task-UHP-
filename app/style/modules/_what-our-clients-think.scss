@@ -1,0 +1,25 @@
+.what-our-clients-think {
+    background-color: lightgray;
+
+    h3 {
+        color: $darkBlue;
+        font-weight: bold;}
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+
+    .what-our-clients-think {
+        p {
+            font-size: 12px;
+        }
+        img {
+        height: 60px;
+        }
+    }
+}

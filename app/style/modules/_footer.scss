@@ -1,0 +1,89 @@
+footer {
+
+    .img {
+        height: 50px;
+        width: 100px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        color: $blue;
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 5px 10px;
+        background-color: $blue;
+        border: none;
+    }
+
+    li {
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 10px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 50px;
+        font-size: 18px;
+        color: white;
+        background-image: url("../app/images/scrollToTop.png");
+        background-position: center center;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    .input-group {
+        min-width: 230px
+    }
+
+
+}
+
+@media screen and (max-width: 1199px) {
+    footer {
+
+        p,
+        li {
+            font-size: 12px;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    footer {
+        .footer-image {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        #myBtn {
+            padding: 17px;
+            background-size: 35px
+        }
+
+    }
+}
